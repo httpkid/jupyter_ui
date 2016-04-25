@@ -5,7 +5,7 @@ export default class listContainer extends Component {
 		super(props)
 
 		this.state = {
-			test: 'Setting Environment - Michał part'
+			test: 'Setting Environment - Janek part'
 		}
 	}
 

@@ -1,8 +1,9 @@
+//python -m notebook --NotebookApp.allow_origin="*"
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-import listContainer from './containers/listContainer';
-import projectContainer from './containers/projectContainer';
+import ListContainer from './containers/ListContainer';
+import ProjectContainer from './containers/ProjectContainer';
 
 class App extends Component {
 	constructor(props){
@@ -14,7 +15,8 @@ class App extends Component {
 	}
 
 	render(){
-		return <h2>{this.state.test}</h2>
+		return <ProjectContainer />
+		//return <h2>{this.state.test}</h2>
 	}
 }
 
