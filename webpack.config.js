@@ -7,13 +7,13 @@ module.exports = {
 		main: [
 			'webpack-dev-server/client?http://localhost:8080',
 			'webpack/hot/dev-server',
-			'./src/test.js'		//here is app entry poiny
+			'./src/js/app.js'		//here is app entry poiny
 		]
 	},
 	output:{
 		filename: '[name].js',
-		path: path.join(__dirname, 'public'),
-		publicPath: '/public/'
+		path: path.join(__dirname, 'dev'),
+		publicPath: '/dev/'
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin() ,
